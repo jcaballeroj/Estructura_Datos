@@ -69,3 +69,66 @@ print("expensive" not in txt)
 txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
+  
+  
+print()  
+  
+"""
+------Strings en Python------
+Slicing: Puede devolver un rango de caracteres utilizando la sintaxis de corte(slicing).
+Especificando el índice de inicio y el índice final, separados por dos puntos
+"""  
+b = "Hello world"
+print(b[2:5])
+
+print(b[-5:-2]) #Inicia desde el final de la frase y busca el rango de la dimension solicitada
+
+
+"""
+------Modify  en Python------
+los strings en python pueden cambiar de tamaño de letra(minuscula o mayuscula) como tambien puede agregar texto o quitar espacios 
+"""  
+a = "Hello, World!"
+print(a.upper()) #devuleve el texto en mayusuclas
+
+a = "Hello, World!"
+print(a.lower()) #devuleve el texto en minisculas
+
+""" 
+El método strip() elimina cualquier espacio en blanco desde el principio o el final:
+"""
+a = " Hello, World! "
+print(a.strip()) # retorna "Hello, World!"
+
+""" 
+El método replace()  reemplaza una cadena con otra cadena:
+"""
+a = "Hello, World!"
+print(a.replace("H", "J")) #Cambia la H por la J
+
+""" 
+Cuerda Dividida: 
+El método split() devuelve una lista donde el texto entre el separador especificado se convierte en los elementos de la lista.
+"""
+a = "Hello, World!"
+print(a.split(", ")) # retorna ['Hello', ' World!']
+
+""" 
+Concatenacion de Strings
+Usamos '+' para combinar dos strings
+"""
+a = "Hola"
+b = "Mundo"
+c = a + b
+print(c) # Hola mundo
+
+
+""" 
+Cuerdas F (Formato de combinacion)
+Es una forma predeterminada de formatear cadenas.
+donde podremos combinar numeros y textos
+
+"""
+edad = 23
+txt = f"Mi nombre es Rodrigo, y tengo {edad} años"
+print(txt)
