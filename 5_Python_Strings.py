@@ -69,10 +69,6 @@ print("expensive" not in txt)
 txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
-  
-  
-print()  
-  
 """
 ------Strings en Python------
 Slicing: Puede devolver un rango de caracteres utilizando la sintaxis de corte(slicing).
@@ -131,4 +127,15 @@ donde podremos combinar numeros y textos
 """
 edad = 23
 txt = f"Mi nombre es Rodrigo, y tengo {edad} años"
+print(txt)
+
+"""
+
+Marcadores de posición y modificadores
+Un marcador de posición puede contener variables operaciones, funciones y modificadores para formatear el valor.
+
+"""
+
+price = 59
+txt = f"The price is {price} dollars"
 print(txt)
